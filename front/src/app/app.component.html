@@ -1,0 +1,26 @@
+<main class="main">
+  <app-app-stars/>
+  <!-- <div class="book">
+    <div class="page page-left">
+      <div class="bookmark-place-left">
+        <div class="bookmark bookmark-left"></div>
+        <div class="bookmark bookmark-left"></div>
+      </div>
+    </div>
+    <div class="page page-right">
+      <div class="bookmark-place-top">
+        <div class="bookmark bookmark-top bookmark-active"></div>
+        <div class="bookmark bookmark-top"></div>    
+      </div>
+      <div class="bookmark-place-right">
+        <div class="bookmark bookmark-right"></div>
+        <div class="bookmark bookmark-right"></div>
+      </div>
+    </div>
+  </div> -->
+  <div class="book">
+    <app-core-pixel-art [imageSrcWebp]="book.webp" [imageSrc]="book.alt" (click)="turnPage()"/>
+    <!-- <app-core-pixel-art imageSrcWebp="img/book.webp" imageSrcPng="img/book.png"/> -->
+  </div>
+</main>
+<router-outlet />

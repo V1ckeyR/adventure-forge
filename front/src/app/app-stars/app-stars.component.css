@@ -1,0 +1,12 @@
+
+@keyframes sparkle {
+    50% {opacity: 0;}
+  }
+  
+.star {
+    position: absolute;
+    background-color: var(--almond);
+    width: 2px;
+    height: 2px;
+    animation: sparkle 5s infinite;
+}

@@ -1,0 +1,86 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  --main-bg-color: #410200;
+  --main-paper-color: #efdecd;
+  --main-text-color: #1C1018;
+
+  /* colors */
+  --deep-brown: #410200;
+  --almond: #efdecd;
+  --dark-moss-green: rgb(65, 82, 31);
+  --ecru: #a89f68;
+  --smoky-black: #100B00;
+  --yellow-green: #85CB33;
+  --drab-dark-brown: #3B341F;
+  --licorice: #1C1018;
+
+  /* Textures */
+  --large-leather: url("https://www.transparenttextures.com/patterns/large-leather.png");
+  --basketball: url("https://www.transparenttextures.com/patterns/basketball.png");
+  --mooning: url("https://www.transparenttextures.com/patterns/mooning.png");
+  --soft-wallpaper: url("https://www.transparenttextures.com/patterns/soft-wallpaper.png");
+}
+
+body {
+  color: var(--almond);
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-image: radial-gradient(circle at 70% top, #2D0140 0, #00010D 60%);
+}
+
+.book {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  height: 100vh;
+  width: 100vw;
+  overflow: auto;
+  min-height: 380px;
+}
+
+.page {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  
+  float: left;
+  padding: 20px;
+  border: 2px solid goldenrod;
+}
+
+.page::after {
+  content: "";
+  clear: both;
+}
+
+/* SCROLLBAR */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(20, 20, 20, 0.8);
+  border-radius: 6px;
+  box-shadow: inset 0 0 10px rgba(128, 0, 255, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(128, 0, 255, 0.8);
+  transition: all 0.3s ease-in-out;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, rgba(128, 0, 255, 1), rgb(107, 3, 107));
+  box-shadow: 0 0 20px rgba(128, 0, 255, 1); 
+}
+
